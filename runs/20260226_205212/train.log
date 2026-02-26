@@ -1,0 +1,57 @@
+20:52:12  INFO      Output dir : /home/changhong/prj/finn_cli_fork/scripts/TMD/runs/20260226_205212
+20:52:12  INFO      Device     : cuda
+20:52:12  INFO      ━━━  [1/5] Parsing dataset  ━━━
+20:52:13  INFO        parsed train.dat  →  738442 samples
+20:52:13  INFO        parsed test.dat  →  316472 samples
+20:52:13  INFO        done in 1.2 s
+20:52:13  INFO        classes (6): ['0', '1', '2', '3', '4', '5']
+20:52:13  INFO      ━━━  [2/5] Sliding windows  ━━━
+20:52:13  INFO        train 10383  |  val 1154  |  test 2472
+20:52:13  INFO      ━━━  [3/5] Normalising  ━━━
+20:52:13  INFO        means: [1.0288 7.7164 0.3888]
+20:52:13  INFO        stds : [6.6657 6.7636 4.9368]
+20:52:14  INFO        class weights: [0.549 0.428 1.465 1.786 2.994 3.754]
+20:52:14  INFO      ━━━  [4/5] Building model  ━━━
+20:52:14  INFO        trainable parameters: 44523
+20:52:14  INFO      ━━━  [5/5] Training  ━━━
+20:52:14  INFO        Ep    TrLoss    TrAcc    VaLoss    VaAcc         LR  Time
+20:52:14  INFO      ───────────────────────────────────────────────────────────
+20:52:15  INFO         1    1.5278   0.3652    1.3039   0.4489   4.00e-04  1.7s
+20:52:15  INFO        ↳ best val-loss 1.3039  →  saved best.pt
+20:52:16  INFO         2    1.0269   0.5804    0.8307   0.6733   6.00e-04  0.9s
+20:52:16  INFO        ↳ best val-loss 0.8307  →  saved best.pt
+20:52:17  INFO         3    0.6500   0.7785    0.5327   0.8302   8.00e-04  0.8s
+20:52:17  INFO        ↳ best val-loss 0.5327  →  saved best.pt
+20:52:18  INFO         4    0.4271   0.8611    0.3632   0.8657   1.00e-03  0.9s
+20:52:18  INFO        ↳ best val-loss 0.3632  →  saved best.pt
+20:52:19  INFO         5    0.2708   0.9200    0.2293   0.9211   1.00e-03  0.8s
+20:52:19  INFO        ↳ best val-loss 0.2293  →  saved best.pt
+20:52:20  INFO         6    0.1965   0.9464    0.1994   0.9480   9.99e-04  0.9s
+20:52:20  INFO        ↳ best val-loss 0.1994  →  saved best.pt
+20:52:20  INFO         7    0.1616   0.9564    0.1640   0.9549   9.97e-04  0.9s
+20:52:20  INFO        ↳ best val-loss 0.1640  →  saved best.pt
+20:52:21  INFO         8    0.1404   0.9629    0.1604   0.9324   9.93e-04  0.8s
+20:52:21  INFO        ↳ best val-loss 0.1604  →  saved best.pt
+20:52:22  INFO         9    0.1243   0.9653    0.1755   0.9619   9.87e-04  0.8s
+20:52:23  INFO        10    0.1033   0.9741    0.1268   0.9506   9.80e-04  0.7s
+20:52:23  INFO        ↳ best val-loss 0.1268  →  saved best.pt
+20:52:23  INFO        11    0.0931   0.9763    0.1587   0.9307   9.71e-04  0.7s
+20:52:24  INFO        12    0.0916   0.9750    0.1024   0.9645   9.61e-04  0.8s
+20:52:24  INFO        ↳ best val-loss 0.1024  →  saved best.pt
+20:52:25  INFO        13    0.0784   0.9798    0.1070   0.9688   9.49e-04  0.7s
+20:52:26  INFO        14    0.0748   0.9807    0.1047   0.9740   9.35e-04  0.8s
+20:52:27  INFO        15    0.0721   0.9822    0.1519   0.9601   9.21e-04  0.8s
+20:52:27  INFO        16    0.0740   0.9806    0.0801   0.9783   9.05e-04  0.7s
+20:52:27  INFO        ↳ best val-loss 0.0801  →  saved best.pt
+20:52:28  INFO        17    0.0591   0.9844    0.0936   0.9671   8.87e-04  0.7s
+20:52:29  INFO        18    0.0564   0.9872    0.1247   0.9662   8.68e-04  0.7s
+20:52:29  INFO        19    0.0539   0.9869    0.0902   0.9731   8.48e-04  0.8s
+20:52:30  INFO        20    0.0485   0.9867    0.1411   0.9515   8.27e-04  0.8s
+20:52:31  INFO        21    0.0513   0.9888    0.1020   0.9757   8.05e-04  0.7s
+20:52:32  INFO        22    0.0423   0.9901    0.1126   0.9636   7.82e-04  0.7s
+20:52:32  INFO        23    0.0450   0.9872    0.1021   0.9697   7.58e-04  0.5s
+20:52:33  INFO        24    0.0389   0.9902    0.1468   0.9688   7.33e-04  0.4s
+20:52:33  INFO        25    0.0351   0.9922    0.1077   0.9766   7.08e-04  0.5s
+20:52:34  INFO        26    0.0340   0.9913    0.0905   0.9766   6.81e-04  0.4s
+20:52:34  INFO        Early stopping triggered at epoch 26
+20:52:34  INFO      ━━━  Final evaluation on test set  ━━━
