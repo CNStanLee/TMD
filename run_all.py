@@ -56,7 +56,7 @@ try:
 except ImportError:
     HAS_MATPLOTLIB = False
 
-from models import TMD_1DCNN
+from models import TMD_1DCNN, export_model_to_qonnx
 
 # ---------------------------------------------------------------------------
 # Defaults
@@ -442,6 +442,15 @@ def main(args: argparse.Namespace) -> None:
     save_cm(y_true, y_pred, c_names, OUT_DIR / "confusion_matrix.png")
     if HAS_MATPLOTLIB:
         log.info("  Confusion matrix → %s", OUT_DIR / "confusion_matrix.png")
+
+    # ------------------------------------------------------------------
+    # 8. QONNX export
+    # ------------------------------------------------------------------
+    log.info("━━━  Exporting to QONNX  ━━━")
+    qonnx_path = OUT_DIR / "tmd_4bit.onnx"
+    export_model_to_qonnx(model, qonnx_path,
+                          window_size=args.window, device=device)
+    log.info("  QONNX model saved → %s", qonnx_path)
 
     log.info("All artefacts saved in:  %s", OUT_DIR)
 
